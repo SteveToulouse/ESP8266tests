@@ -1,0 +1,31 @@
+167 msecs per 'frame'
+129600 bytes in screen
+776047 bytes processed/sec
+
+168 msecs per 'frame'
+129600 bytes in screen
+771428 bytes processed/sec
+
+168 msecs per 'frame'
+129600 bytes in screen
+771428 bytes processed/sec
+
+168 msecs per 'frame'
+129600 bytes in screen
+771428 bytes processed/sec
+
+167 msecs per 'frame'
+129600 bytes in screen
+776047 bytes processed/sec
+
+168 msecs per 'frame'
+129600 bytes in screen
+771428 bytes processed/sec
+
+168 msecs per 'frame'
+129600 bytes in screen
+771428 bytes processed/sec
+
+168 msecs per 'frame'
+129600 bytes in screen
+771428 bytes processed/sec
