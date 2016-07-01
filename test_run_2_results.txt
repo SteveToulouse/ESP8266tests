@@ -1,0 +1,175 @@
+=====================
+
+nbLEDPerLine     144
+nbLinesPerScreen 300
+chunkSizeInLines 100
+nbChunks         3
+buffSize         43200
+timeLEDWrite     0
+
+98 msecs
+129600 bytes
+1322448 read bytes/sec
+
+98 msecs
+129600 bytes
+1322448 read bytes/sec
+
+98 msecs
+129600 bytes
+1322448 read bytes/sec
+
+=====================
+
+nbLEDPerLine     144
+nbLinesPerScreen 300
+chunkSizeInLines 100
+nbChunks         3
+buffSize         43200
+timeLEDWrite     50
+
+113 msecs
+129600 bytes
+1146902 read bytes/sec
+
+112 msecs
+129600 bytes
+1157142 read bytes/sec
+
+113 msecs
+129600 bytes
+1146902 read bytes/sec
+
+=====================
+
+nbLEDPerLine     144
+nbLinesPerScreen 300
+chunkSizeInLines 50
+nbChunks         6
+buffSize         21600
+timeLEDWrite     50
+
+114 msecs
+129600 bytes
+1136842 read bytes/sec
+
+113 msecs
+129600 bytes
+1146902 read bytes/sec
+
+113 msecs
+129600 bytes
+1146902 read bytes/sec
+
+=====================
+
+nbLEDPerLine     144
+nbLinesPerScreen 300
+chunkSizeInLines 30
+nbChunks         10
+buffSize         12960
+timeLEDWrite     50
+
+114 msecs
+129600 bytes
+1136842 read bytes/sec
+
+114 msecs
+129600 bytes
+1136842 read bytes/sec
+
+114 msecs
+129600 bytes
+1136842 read bytes/sec
+
+=====================
+
+nbLEDPerLine     144
+nbLinesPerScreen 300
+chunkSizeInLines 20
+nbChunks         15
+buffSize         8640
+timeLEDWrite     50
+
+115 msecs
+129600 bytes
+1126956 read bytes/sec
+
+114 msecs
+129600 bytes
+1136842 read bytes/sec
+
+114 msecs
+129600 bytes
+1136842 read bytes/sec
+
+114 msecs
+129600 bytes
+1136842 read bytes/sec
+
+=================
+
+nbLEDPerLine     144
+nbLinesPerScreen 300
+chunkSizeInLines 15
+nbChunks         20
+buffSize         6480
+timeLEDWrite     50
+
+115 msecs
+129600 bytes
+1126956 read bytes/sec
+
+115 msecs
+129600 bytes
+1126956 read bytes/sec
+
+116 msecs
+129600 bytes
+1117241 read bytes/sec
+
+=====================
+
+nbLEDPerLine     144
+nbLinesPerScreen 300
+chunkSizeInLines 2
+nbChunks         150
+buffSize         864
+timeLEDWrite     50
+
+136 msecs
+129600 bytes
+952941 read bytes/sec
+
+136 msecs
+129600 bytes
+952941 read bytes/sec
+
+135 msecs
+129600 bytes
+960000 read bytes/sec
+
+====================
+
+nbLEDPerLine     144
+nbLinesPerScreen 300
+chunkSizeInLines 1
+nbChunks         300
+buffSize         432
+timeLEDWrite     50
+
+128 msecs
+129600 bytes
+1012500 read bytes/sec
+
+128 msecs
+129600 bytes
+1012500 read bytes/sec
+
+127 msecs
+129600 bytes
+1020472 read bytes/sec
+
+128 msecs
+129600 bytes
+1012500 read bytes/sec
