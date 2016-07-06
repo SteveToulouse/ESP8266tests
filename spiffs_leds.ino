@@ -6,7 +6,7 @@ const uint16_t chunkSizeInLines = 1;
 const uint16_t nbChunks = nbLinesPerScreen / chunkSizeInLines;
 
 const uint16_t buffSize = 3 * nbLEDPerLine * chunkSizeInLines;
-static uint8_t LEDBuffer[buffSize]; //  6480 bytes, for the example values
+static uint8_t LEDBuffer[buffSize]; //  432 bytes, for the example values
 
 const uint32_t timeLEDWrite = 50;// microseconds
 
