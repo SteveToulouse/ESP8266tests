@@ -2,10 +2,10 @@
 
 const uint16_t nbLEDPerLine = 144;
 const uint16_t nbLinesPerScreen = 300;
-const uint16_t chunkSizeInLines = 1;
+const uint16_t nbLinesPerChunk = 1;
 const uint16_t nbChunks = nbLinesPerScreen / chunkSizeInLines;
 
-const uint16_t buffSize = 3 * nbLEDPerLine * chunkSizeInLines;
+const uint16_t buffSize = 3 * nbLEDPerLine * nbLinesPerChunk;
 static uint8_t LEDBuffer[buffSize]; //  432 bytes, for the example values
 
 const uint32_t timeLEDWrite = 50;// microseconds
@@ -14,16 +14,16 @@ void setup() {
   Serial.begin(115200);
   Serial.println();
 
-  Serial.print("nbLEDPerLine     "); Serial.println(nbLEDPerLine);
-  Serial.print("nbLinesPerScreen "); Serial.println(nbLinesPerScreen);
-  Serial.print("chunkSizeInLines "); Serial.println(chunkSizeInLines);
-  Serial.print("nbChunks         "); Serial.println(nbChunks);
-  Serial.print("buffSize         "); Serial.println(buffSize);
-  Serial.print("timeLEDWrite     "); Serial.println(timeLEDWrite);
+  Serial.print(F("nbLEDPerLine     ")); Serial.println(nbLEDPerLine);
+  Serial.print(F("nbLinesPerScreen ")); Serial.println(nbLinesPerScreen);
+  Serial.print(F("nbLinesPerChunk  ")); Serial.println(nbLinesPerChunk);
+  Serial.print(F("nbChunks         ")); Serial.println(nbChunks);
+  Serial.print(F("buffSize         ")); Serial.println(buffSize);
+  Serial.print(F("timeLEDWrite     ")); Serial.println(timeLEDWrite);
   Serial.flush();
   
   if (!SPIFFS.begin()) {
-    Serial.println(F("fail"));
+    Serial.println(F("spiffs fail"));
     Serial.flush();
     abort;
   }
@@ -37,7 +37,7 @@ void doSomethingWithLEDs(uint16_t line) {
 
 void loop() {
 
-  // Read test file, "chunkSizeInLines" lines at a time
+  // Read test file, "nbLinesPerChunk" lines at a time
   // and simulate writing to LED strip
   
   File f = SPIFFS.open("/testfile.dat", "r");
@@ -57,7 +57,7 @@ void loop() {
       bytesTotal += f.readBytes( (char*)LEDBuffer, buffSize);
 
       // cycle over the lines we just read, sending them to the LED strip
-      for ( uint16_t line = 0; line < chunkSizeInLines; line++ ) {
+      for ( uint16_t line = 0; line < nbLinesPerChunk; line++ ) {
           doSomethingWithLEDs(line);
       }
 
@@ -75,5 +75,5 @@ void loop() {
   Serial.flush();
 
   f.close();
-  delay(2000);
+  delay(5000);
 }
