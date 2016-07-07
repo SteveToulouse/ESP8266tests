@@ -74,6 +74,5 @@ void loop() {
   Serial.print((bytesTotal * 1000) / deltaMillis); Serial.println(F(" read bytes/sec"));
   Serial.flush();
 
-  f.close();
   delay(5000);
 }
